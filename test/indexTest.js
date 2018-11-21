@@ -9,7 +9,7 @@ describe("cat", () => {
     expect(new Cat()).to.be.an.instanceof(Cat);
   })
   it("cat.speak() returns '[name]' says meow!", () => {
-    expect(cat.speak()).to.eq(`${cat.name} says meow!`)
+    expect(cat.speak()).to.eq('Sasha says meow!')
   })
 })
 describe("dog", () => {
@@ -21,7 +21,7 @@ describe("dog", () => {
     expect(new Dog()).to.be.an.instanceof(Dog);
   })
   it("dog.speak() returns '[name] says woof!'", () => {
-    expect(dog.speak()).to.eq(`${dog.name} says woof!`)
+    expect(dog.speak()).to.eq('Rufio says woof!')
   })
 })
 describe("bird", () => {
@@ -33,10 +33,10 @@ describe("bird", () => {
   it("has a class of Bird", () => {
     expect(new Bird()).to.be.an.instanceof(Bird);
   })
-  it("bird.speak() returns 'It's me! [name]], the parrot!'", () => {
-    expect(bird.speak()).to.eq(`It's me! ${bird.name}, the parrot!`)
+  it("bird.speak() returns 'It's me! [name], the parrot!'", () => {
+    expect(bird.speak()).to.eq('It\'s me! Pablo, the parrot!')
   })
   it("bird2.speak() returns 'Squawk!'", () => {
-    expect(bird2.speak()).to.eq(`Squawk!`)
+    expect(bird2.speak()).to.eq('Mable says squawk!')
   })
 })
